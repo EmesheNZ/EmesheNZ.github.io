@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+h2 {
+  font-weight: lighter;
+}
+#content {
+  padding: 70px 30px 0px 30px;
+  min-height: 80vh;
+}
+.hero-img {
+  height: 74vh;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1000px;
+}
+.index .hero-img img {
+  object-position: 50% 0%;
+}
+.hero-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 25%;
+  margin: 0 auto;
+}
+.about {
+  min-height: 86vh;
+  font-weight: 400;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about img {
+  object-fit: cover;
+  width: 300px;
+  height: 100%;
+  max-width: 70vw;
+}
+.about .bio-container {
+  padding-top: 40px;
+  display: flex;
+  gap: 25px;
+}
+.cv {
+  padding: 50px 0px 40px 0px;
+}
+@media (max-width: 630px) {
+  #content.about {
+    padding: 40px 30px 0px 30px;
+  }
+  .about img {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 5px;
+  }
+  .about .bio-container {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .about img {
+    padding: 0;
+    float: none;
+    margin: 0 auto;
+  }
+  .about .bio-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contact .hero-img {
+  width: 80%;
+  height: 60vh;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 84vh;
+  gap: 40px;
+}
+@media (max-width: 630px) {
+  .contact .hero-img img {
+    object-fit: contain;
+  }
+  .contact .hero-img {
+    height: 100%;
+  }
+}
+.mailto {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.mailto:hover {
+  color: #7b7b7b;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  color: #7b7b7b;
+  margin-top: 40px;
+  padding: 20px 0px 20px 0px;
+  font-size: 12px;
+}
+
+/* NavBar */
+#name > a {
+  font-size: 20px;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 35px;
+  font-size: 18px;
+}
+#navbar > .nav-links > a {
+  display: inline-block;
+  padding: 0;
+  text-decoration: none;
+  color: #7b7b7b;
+}
+#navbar > .nav-links > a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.bi:hover {
+  cursor: pointer;
+  color: #777;
+}
+#nav-check,
+.bi-x,
+.bi-list {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  #navbar {
+    justify-content: space-around;
+    height: 70px;
+  }
+  #content {
+    padding-top: 70px;
+  }
+  #name {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* #content {
+    padding-top: 70px;
+  } */
+  #navbar {
+    display: flex;
+    font-size: 25px;
+  }
+  .bi-x {
+    font-size: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .bi-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 1;
+  }
+  #nav-check,
+  .bi-x,
+  .bi-list {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+  .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    padding-left: 25px;
+    transition: all 0.3s ease-in;
+  }
+  #navbar .nav-links > a {
+    padding: 13px 10px 13px 10px;
+    width: 100%;
+  }
+  #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  #nav-check {
+    display: flex;
+    opacity: 0;
+    z-index: 3;
+    top: inherit;
+    cursor: pointer;
+  }
+
+  #nav-check:checked ~ .bi-x {
+    display: flex;
+  }
+
+  #nav-check:checked ~ .bi-list {
+    display: none;
+  }
+}
+
+/* Gallery */
+
+.grid {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  column-gap: 8px;
+}
+
+.column {
+  flex: 33.3%;
+  max-width: 33.3%;
+  row-gap: 8px;
+}
+
+.grid-item img {
+  width: 100%;
+  margin-bottom: 5px;
+}

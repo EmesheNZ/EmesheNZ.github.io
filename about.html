@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Uncheck check box for nav button if screen is resized while nav menu is opened -->
+    <script>
+      window.addEventListener(
+        "resize",
+        function () {
+          if (window.matchMedia("(min-width: 600px)").matches) {
+            document.getElementById("nav-check").checked = false;
+          }
+        },
+        true
+      );
+    </script>
+    <title>Emeshe Nagy-Zambo</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="navbar">
+        <input id="nav-check" type="checkbox" />
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x"></i>
+        <div id="name">
+          <a href="/index.html" target="_self">Emeshe Nagy-Zambo</a>
+        </div>
+        <div class="nav-links">
+          <a href="/about.html" target="_self">About</a>
+          <a href="portfolio.html" target="_self">Portfolio</a>
+          <a href="contact.html" target="_self">Contact</a>
+        </div>
+      </div>
+      <div id="content" class="about">
+        <div class="bio-container">
+          <img src="images\profile.jpg" alt="Profile Image" />
+          <div class="bio">
+            Born in 2000, Emeshe Nagy-Zambo is an emerging artist based out of
+            Guelph, Ontario.<br /><br/>She has always been fascinated by the
+            process of creating art in all its forms and mediums. This drive to
+            transcribe her inner emotional landscape into a tangible piece of art
+            has led her to develop her current body of work centering around
+            themes of trauma and grief. In this process, she externalizes onto
+            the figures she paints, various ephemeral experiences tied to the human
+            condition.<br/><br/>Having recently begun pursuing art full-time
+            in 2023, she has studied at Gritt Gallery Atelier, where she has
+            trained under and assisted the artist Eleni Bakopolous. Having
+            forgone formal institutional education in favor of direct artistic
+            mentorship, she is able to more freely hone her artistic vision
+            without the influence of academia dictating her work.
+          </div>
+        </div>
+
+        <div class="cv">
+          <h2>Exhibitions:</h2>
+          Group Exhibitions<br />• 2023 - Open Studio Tour - Guelph, Ontario
+        </div>
+      </div>
+      <!-- Footer -->
+      <div id="footer">© 2024 Emeshe Nagy-Zambo</div>
+    </div>
+  </body>
+</html>

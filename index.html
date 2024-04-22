@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Uncheck check box for nav button if screen is resized while nav menu is opened -->
+    <script>
+      window.addEventListener(
+        "resize",
+        function () {
+          if (window.matchMedia("(min-width: 600px)").matches) {
+            document.getElementById("nav-check").checked = false;
+          }
+        },
+        true
+      );
+    </script>
+    <title>Emeshe Nagy-Zambo</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="navbar">
+        <input id="nav-check" type="checkbox" />
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x"></i>
+        <div id="name">
+          <a href="/index.html" target="_self">Emeshe Nagy-Zambo</a>
+        </div>
+        <div class="nav-links">
+          <a href="/about.html" target="_self">About</a>
+          <a href="portfolio.html" target="_self">Portfolio</a>
+          <a href="contact.html" target="_self">Contact</a>
+        </div>
+      </div>
+      <div id="content" class="index">
+        <a class="hero-img" href="portfolio.html" target="_self">
+          <img src="images\inSitu.jpg" alt="Gallery image 1"
+        /></a>
+      </div>
+      <!-- Footer -->
+      <div id="footer">© 2024 Emeshe Nagy-Zambo</div>
+    </div>
+  </body>
+</html>

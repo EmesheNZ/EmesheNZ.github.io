@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="module" src="/js/index.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/node_modules/photoswipe/dist/photoswipe.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Uncheck check box for nav button if screen is resized while nav menu is opened -->
+    <script>
+      window.addEventListener(
+        "resize",
+        function () {
+          if (window.matchMedia("(min-width: 600px)").matches) {
+            document.getElementById("nav-check").checked = false;
+          }
+        },
+        true
+      );
+    </script>
+    <title>Emeshe Nagy-Zambo</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- Nav Bar -->
+      <div id="navbar">
+        <input id="nav-check" type="checkbox" />
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x"></i>
+        <div id="name">
+          <a href="/index.html" target="_self">Emeshe Nagy-Zambo</a>
+        </div>
+        <div class="nav-links">
+          <a href="/about.html" target="_self">About</a>
+          <a href="portfolio.html" target="_self">Portfolio</a>
+          <a href="contact.html" target="_self">Contact</a>
+        </div>
+      </div>
+
+      <!-- Page Content -->
+      <div id="content">
+        <!-- Gallery -->
+        <div id="gallery" class="grid pswp-gallery">
+          <!-- Column 1 -->
+          <div class="column">
+            <a
+              class="grid-item"
+              href="images\NagyZambo_Desolation.jpg"
+              title="Desolation Oil on Canvas 40” x 30” 2023"
+              data-pswp-width="4657"
+              data-pswp-height="3413"
+              ><img
+                src="images\NagyZambo_Desolation.jpg"
+                alt="Desolation Oil on Canvas 40” x 30” 2023"
+              /><span class="pswp-caption-content"
+                >Desolation<br />Oil on Canvas<br />40” x 30”<br />2023</span
+              ></a
+            >
+
+            <a
+              class="grid-item"
+              href="images\NagyZambo_MementoVivere.jpg"
+              title="Caption for gallery item 3"
+              data-pswp-width="4147"
+              data-pswp-height="3114"
+              ><img
+                src="images\NagyZambo_MementoVivere.jpg"
+                alt="Gallery image 3"
+              /><span class="pswp-caption-content"
+                >Desolation<br />Oil on Canvas<br />40” x 30”<br />2023</span
+              ></a
+            >
+            <a
+              class="grid-item"
+              href="images\NagyZambo_InDeath.jpg"
+              title="Caption for gallery item 1"
+              data-pswp-width="4104"
+              data-pswp-height="3055"
+              ><img
+                src="images\NagyZambo_InDeath.jpg"
+                alt="Gallery image 1"
+              /><span class="pswp-caption-content"
+                >Desolation<br />Oil on Canvas<br />40” x 30”<br />2023</span
+              ></a
+            >
+            
+          </div>
+          <!-- Column 2 -->
+          <div class="column">
+            <a
+              class="grid-item"
+              href="images\NagyZambo_Overgrown.jpg"
+              title="Caption for gallery item 3"
+              data-pswp-width="2618"
+              data-pswp-height="5164"
+              ><img
+                src="images\NagyZambo_Overgrown.jpg"
+                alt="Gallery image 3"
+              /><span class="pswp-caption-content"
+                >Desolation<br />Oil on Canvas<br />40” x 30”<br />2023</span
+              ></a
+            ><a
+              class="grid-item"
+              href="images\NagyZambo_MementoCrescere.jpg"
+              title="Caption for gallery item 1"
+              data-pswp-width="4104"
+              data-pswp-height="3055"
+              ><img
+                src="images\NagyZambo_MementoCrescere.jpg"
+                alt="Gallery image 1"
+              /><span class="pswp-caption-content"
+                >Desolation<br />Oil on Canvas<br />40” x 30”<br />2023</span
+              ></a
+            >
+          </div>
+          <!-- Column 3 -->
+          <div class="column">
+            <a
+              class="grid-item"
+              href="images\NagyZambo_MementoMori.jpg"
+              title="Caption for gallery item 1"
+              data-pswp-width="4191"
+              data-pswp-height="3145"
+              ><img
+                src="images\NagyZambo_MementoMori.jpg"
+                alt="Gallery image 1"
+              /><span class="pswp-caption-content"
+                >Desolation<br />Oil on Canvas<br />40” x 30”<br />2023</span
+              ></a
+            >
+            <a
+              class="grid-item"
+              href="images\NagyZambo_Despondency.jpg"
+              title="Caption for gallery item 2"
+              data-pswp-width="4442"
+              data-pswp-height="3351"
+              ><img
+                src="images\NagyZambo_Despondency.jpg"
+                alt="Gallery image 2"
+              /><span class="pswp-caption-content"
+                >Desolation<br />Oil on Canvas<br />40” x 30”<br />2023</span
+              ></a
+            >
+            <a
+              class="grid-item"
+              href="images\NagyZambo_Verdant.jpg"
+              title="Caption for gallery item 2"
+              data-pswp-width="2666"
+              data-pswp-height="2647"
+              ><img
+                src="images\NagyZambo_Verdant.jpg"
+                alt="Gallery image 2"
+              /><span class="pswp-caption-content"
+                >Desolation<br />Oil on Canvas<br />40” x 30”<br />2023</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">© 2024 Emeshe Nagy-Zambo</div>
+    </div>
+  </body>
+</html>
