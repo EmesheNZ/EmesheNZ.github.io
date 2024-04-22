@@ -168,9 +168,6 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  /* #content {
-    padding-top: 70px;
-  } */
   #navbar {
     display: flex;
     font-size: 25px;
@@ -242,21 +239,32 @@ h2 {
 /* Gallery */
 
 .grid {
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
   max-width: 800px;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 8px;
+  justify-content: center;
 }
 
 .column {
-  flex: 33.3%;
-  max-width: 33.3%;
+  flex: 32%;
+  max-width: 32%;
   row-gap: 8px;
 }
 
 .grid-item img {
   width: 100%;
   margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    padding: 0px;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
