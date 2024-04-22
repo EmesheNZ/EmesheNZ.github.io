@@ -124,7 +124,6 @@ h2 {
 @media (max-width: 500px) {
   .mailto {
     font-size: 22px;
-    transform: scale(.95, 1.1);
     font-weight: 350;
   }
 }
