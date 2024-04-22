@@ -114,11 +114,19 @@ h2 {
   }
 }
 .mailto {
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 350;
   color: rgba(0, 0, 0, 0.8);
 }
 .mailto:hover {
   color: #7b7b7b;
+}
+@media (max-width: 500px) {
+  .mailto {
+    font-size: 22px;
+    transform: scale(.95, 1.1);
+    font-weight: 350;
+  }
 }
 
 /* Footer */
