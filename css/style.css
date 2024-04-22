@@ -36,6 +36,11 @@ h2 {
 .index .hero-img img {
   object-position: 50% 0%;
 }
+@media (max-width: 630px) {
+  #content.index {
+    padding: 60px 0px 0px 0px;
+  }
+}
 .hero-img img {
   object-fit: cover;
   width: 100%;
