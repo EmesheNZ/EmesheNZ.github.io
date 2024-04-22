@@ -1,6 +1,6 @@
-import PhotoSwipeLightbox from 'node_modules/photoswipe/dist/photoswipe-lightbox.esm.js';
-import PhotoSwipe from 'node_modules/photoswipe/dist/photoswipe.esm.js';
-import PhotoSwipeDynamicCaption from 'node_modules/photoswipe-dynamic-caption-plugin/dist/photoswipe-dynamic-caption-plugin.esm.min.js';
+import PhotoSwipeLightbox from '../node_modules/photoswipe/dist/photoswipe-lightbox.esm.js';
+import PhotoSwipe from '../node_modules/photoswipe/dist/photoswipe.esm.js';
+import PhotoSwipeDynamicCaption from '../node_modules/photoswipe-dynamic-caption-plugin/dist/photoswipe-dynamic-caption-plugin.esm.min.js';
 const lightbox = new PhotoSwipeLightbox({
   gallery: '#gallery',
   children: 'a',
