@@ -24,7 +24,7 @@ h2 {
   flex-shrink: 0;
 }
 #content {
-  padding: 70px 30px 0px 30px;
+  padding: 60px 30px 0px 30px;
   flex-grow: 1;
 }
 .hero-img {
