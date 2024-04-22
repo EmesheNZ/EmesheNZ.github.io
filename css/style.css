@@ -120,7 +120,7 @@ h2 {
 #navbar {
   position: fixed;
   top: 0;
-  height: 50px;
+  height: 60px;
   width: 100%;
   padding-left: 25px;
   padding-right: 25px;
@@ -191,7 +191,7 @@ h2 {
   .bi-list {
     position: absolute;
     right: 5px;
-    top: 0px;
+    top: 10px;
     width: 50px;
     height: 50px;
     margin: 0;
@@ -203,7 +203,7 @@ h2 {
     background-color: #fff;
     height: 0px;
     overflow-y: hidden;
-    top: 50px;
+    top: 60px;
     left: 0px;
     padding-left: 25px;
     transition: all 0.3s ease-in;
@@ -216,14 +216,13 @@ h2 {
     height: 0px;
   }
   #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     overflow-y: auto;
   }
   #nav-check {
     display: flex;
     opacity: 0;
     z-index: 3;
-    top: inherit;
     cursor: pointer;
   }
 
