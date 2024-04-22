@@ -2,9 +2,10 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0px;
   font-family: "segoe ui";
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -13,9 +14,18 @@ a {
 h2 {
   font-weight: lighter;
 }
+#wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#navbar, #footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
 #content {
   padding: 70px 30px 0px 30px;
-  min-height: 80vh;
+  flex-grow: 1;
 }
 .hero-img {
   height: 74vh;
@@ -80,6 +90,7 @@ h2 {
 .contact .hero-img {
   width: 80%;
   height: 60vh;
+  max-width: 900px;
 }
 .contact {
   display: flex;
@@ -88,12 +99,13 @@ h2 {
   min-height: 84vh;
   gap: 40px;
 }
-@media (max-width: 630px) {
+@media (max-width: 900px) {
   .contact .hero-img img {
     object-fit: contain;
   }
   .contact .hero-img {
     height: 100%;
+    width: 100%;
   }
 }
 .mailto {
@@ -111,6 +123,7 @@ h2 {
   margin-top: 40px;
   padding: 20px 0px 20px 0px;
   font-size: 12px;
+  width: 100%;
 }
 
 /* NavBar */
